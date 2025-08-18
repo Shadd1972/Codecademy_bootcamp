@@ -1,0 +1,395 @@
+/* CSS Variables and Base */
+:root {
+    --primary-color: #0066cc;
+    --accent-color: #495057;
+    --light-bg: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #212529;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Typography Enhancements */
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #f4f6f8;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #03136f;
+    font-size: 2rem;
+}
+
+p {
+    color: #495057;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.highlight-text {
+    color: var(--primary-color) !important; 
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #94c4f4 0%, #022d60 100%);
+    color: #ffffff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Navigation and Header */
+.header {
+    background-color: #010133;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.nav-menu li {
+    text-align: center;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem;
+    display: block;
+    background-color: rgba(58, 35, 235, 0.941);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgb(96, 226, 238);
+}
+
+/* Main Sections */
+.hobby-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.hobby-item {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid #1809ebed;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hobby-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.item-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #03136f;
+}
+
+.item-description {
+    margin-bottom: 1rem;
+    color: #01080f;
+    line-height: 1.5;
+}
+
+/* About Section with Named Grid Areas */
+.about {
+    padding: 3rem 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-areas: 
+        "image"
+        "text";
+    gap: 2rem;
+}
+
+.about-text {
+    grid-area: text;
+}
+
+.about-image {
+    grid-area: image;
+}
+
+.about-image img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: -1;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Buttons */
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3;
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #343a40;
+}
+
+/* Footer */
+.footer {
+    background-color: hsl(210, 100%, 25%);
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer-section p {
+    color: #ced4da;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgba(93, 118, 210, 0.778);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: rgb(96, 226, 238);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #495057;
+    color: #ced4da;
+}
+
+/* Responsive Layout */
+@media screen and (min-width: 481px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .nav-menu li {
+        text-align: left;
+    }
+
+    .nav-link {
+        background-color: transparent;
+        border: 2px solid rgb(252, 250, 250);
+        padding: 0.5rem 1rem;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text image";
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        padding: 5rem 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .hobby-item {
+        padding: 2rem;
+    }
+
+    .about-content {
+        gap: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
