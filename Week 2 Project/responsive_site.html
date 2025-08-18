@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Shadd's creative hobbies like airbrushing, watchmaking, 3D printing, and leather working.">
+    <title>Shadd's Responsive Site</title>
+    <link rel="stylesheet" href="responsive_site.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Shadd's Hobbies</h1>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Too Many Hobbies to List</h2>
+                <p class="hero-description">Come experience the world of my hobbies</p>
+            </div>
+        </section>
+
+        <section class="main-hobby" id="hobby">
+            <div class="container">
+                <h2 class="section-title">The Hobbies</h2>
+                <div class="hobby-grid">
+                    <div class="hobby-item" id="airbrush">
+                        <img src="images/airbrush.jpg" alt="Custom Airbrushing">
+                        <h3 class="item-title">Custom Aibrush</h3>
+                        <p class="item-description">Custom Airbrushing on many substrates such as mailboxes, motorcycles, skateboards</p>
+                    </div>                   
+                    <div class="hobby-item">
+                        <img src="images/custom_watch.jpg" alt="Custom Automatic watch">
+                        <h3 class="item-title">Build Custom Automatic Watches</h3>
+                        <p class="item-description">There are many variations of watches I focus on Automatic watches even laser engraving my name on the dials</p>                      
+                    </div>                  
+                    <div class="hobby-item">
+                        <img src="images/3d_printing.jpg" alt="2d Printing">
+                        <h3 class="item-title">3d Printing</h3>
+                        <p class="item-description">I like to print all kinds of things that can be used either in my garage/shop or used for my other hobbies such as an airbrush gun holder, and airbrush paint bottle rack</p>
+                    </div>                   
+                    <div class="hobby-item">
+                        <img src="images/leather_work.jpg" alt="Chocolate Cake">
+                        <h3 class="item-title">Leather Working</h3>
+                        <p class="item-description">I kind of got into this by accident but now I have upholstered a motorcycle seat, a tool bag, and a checkbook case (if they are still even used)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About My Hobbies</h2>
+                        <p>I have always been a creative person just not always sure how to express it. Once my kids were grown I found that I needed to do something and watching TV was not the answer. I started out with 3d printing but found there are only so many things I can print. I then started building custom automatic watches and I enjoy it but it can also be very frustrating. I then picked up airbrushing and I really enjoy this there are so many options and things that can be painted and it lets me explore a broader list of interest. I picked up leather work as a way to complete some of the airbrushing I was doing on motorcycles.</p>
+                        <p class="highlight-text">YouTube has become my best friend</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/jack_of_all_trades.jpg" alt="Jack of all trades card">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: myemail@msn.com<br>
+                    Phone: (555) 555-5555</p>
+                </div>
+                                
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                     <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook profile">Facebook</a>
+                        <a href="#" class="social-link" aria-label="Instagram profile">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shadd Schutte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
