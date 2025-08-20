@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hobby Showcase | Gallery</title>
+  <meta name="description" content="Hobby Showcase - responsive site with Bootstrap, Google Fonts, and Font Awesome.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Primary Navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+          <i class="fa-solid fa-star-of-life"></i>
+          <span>MyHobby<span class="text-primary">Showcase</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="tips.html">Tutorials &amp; Tips</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-5" id="main-content">
+    <div class="container">
+      <h1 class="mb-4 section-title">Gallery</h1>
+      <p class="mb-4">Browse a curated set of projects. All images include descriptive alt text and use lazy loading.</p>
+
+      <div class="row g-4 gallery-section">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 gallery-card hover-tilt">
+            <img src="assets/img/Airbrush/airbrush.jpg" class="card-img-top" alt="Generic Airbrush paint image" loading="lazy">
+            <div class="card-body">
+              <h2 class="h6 card-title">Air Brushing</h2>
+              <p class="card-text">Airbrushing can be learned by almost anyone. With the use of templates it gives the beginner the understanding of the stages of a painting.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 gallery-card hover-tilt">
+            <img src="assets/img/Watches/Watch_process.jpg" class="card-img-top" alt="Image of a watch blown out to show each part" loading="lazy">
+            <div class="card-body">
+              <h2 class="h6 card-title">Custom Watches</h2>
+              <p class="card-text">Custom watch making is probably not the most common hobby, but it is one of the most intricate if you ask me.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 gallery-card hover-tilt">
+            <img src="assets/img/Leather_work/leather_work.jpg" class="card-img-top" alt="Image of leather on a table" loading="lazy">
+            <div class="card-body">
+              <h2 class="h6 card-title">Leather Tooling</h2>
+              <p class="card-text">Leather tooling and working takes a lot of hand strength—more than I ever imagined.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 gallery-card hover-tilt">
+            <img src="assets/img/Knives/knife_3.jpg" class="card-img-top" alt="Small sheath knife with stag handles" loading="lazy">
+            <div class="card-body">
+              <h2 class="h6 card-title">Knife Making</h2>
+              <p class="card-text">My dad fixed and built knives my entire life. When he passed there were several knife blanks left incomplete, so I studied how to finish them and completed the last of the Schutte Knives.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 gallery-card hover-tilt">
+            <img src="assets/img/3D_Printing/3d_printing.jpg" class="card-img-top" alt="3D printer creating a decorative box" loading="lazy">
+            <div class="card-body">
+              <h2 class="h6 card-title">3D Printing</h2>
+              <p class="card-text">I don't do much of this anymore, but still have it around for when I need a certain part or want to create a unique object.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 gallery-card hover-tilt">
+            <img src="assets/img/travel/Thialand_1.JPG" class="card-img-top" alt="Thailand temple at night along the river" loading="lazy">
+            <div class="card-body">
+              <h2 class="h6 card-title">Travel</h2>
+              <p class="card-text">Not sure if travel is a hobby, but if not it should be. I love visiting new places, trying new foods, and seeing different cultures.</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </main>
+
+  <footer class="mt-5 py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0 small text-body-secondary">
+        &copy; 2025 Shadd Schutte. Built with
+        <a href="https://getbootstrap.com" class="link-primary">Bootstrap</a>.
+      </p>
+      <div class="d-flex gap-3 fs-5">
+        <a class="text-body-secondary footer-icon" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="text-body-secondary footer-icon" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="text-body-secondary footer-icon" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
